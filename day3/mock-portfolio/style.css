@@ -27,13 +27,13 @@ nav ul {
 .site-nav {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 50px;
+  column-gap: 50px;
 }
 
 .social-icons {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 30px;
+  column-gap: 30px;
 }
 
 .social-icons img {
