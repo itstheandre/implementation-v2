@@ -61,6 +61,11 @@ header div {
   margin: 50px;
 }
 
+.grid-magic {
+  height: 70vh;
+  background: teal;
+}
+
 @media (max-width: 769px) {
   body {
     background-color: violet;
