@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 nav {
@@ -22,12 +24,27 @@ nav ul {
   list-style-type: none;
 }
 
-.site-nav li {
-  margin-right: 50px;
+.site-nav {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 50px;
 }
 
-.social-icons li {
-  margin-left: 30px;
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 30px;
+}
+
+.social-icons img {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+#behance {
+  height: 15px;
+  width: 25px;
 }
 
 header {

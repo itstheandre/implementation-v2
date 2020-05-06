@@ -61,9 +61,27 @@ header div {
   margin: 50px;
 }
 
-.grid-magic {
+/* .grid-magic {
   height: 70vh;
   background: teal;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+} */
+/* 
+.grid-magic img {
+  width: 100%;
+} */
+
+.grid-magic img {
+  width: 100%;
+}
+
+.grid-magic {
+  /* height: 70vh;
+  background: teal; */
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 @media (max-width: 769px) {
