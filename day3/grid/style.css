@@ -15,7 +15,7 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     ". nav nav . "
-    "blog blog blog link "
+    "blog blog blog blog "
     "footer footer footer footer";
 }
 
@@ -59,4 +59,27 @@ header div {
   border: 10px solid black;
   padding: 50px;
   margin: 50px;
+}
+
+@media (max-width: 769px) {
+  body {
+    background-color: violet;
+  }
+
+  nav {
+    background-color: yellow;
+  }
+
+  .container {
+    grid-template-areas:
+      "blog blog blog blog "
+      "nav nav nav nav "
+      "footer footer footer footer";
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: none;
+  }
 }
