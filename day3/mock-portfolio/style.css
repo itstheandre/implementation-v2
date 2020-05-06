@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,29 +12,30 @@ body {
 
 nav {
   height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+nav h1 {
+  text-align: center;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   list-style-type: none;
 }
 
 .site-nav {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  column-gap: 50px;
+  grid-column-gap: 50px;
 }
 
 .social-icons {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  column-gap: 30px;
+  grid-column-gap: 30px;
 }
 
 .social-icons img {
